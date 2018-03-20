@@ -1,8 +1,6 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Беляев Даниил]().
-* Наставник: []().
-
 ---
 
 **Обратите внимание на файл:**
