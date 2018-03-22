@@ -1,0 +1,24 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  list-style: none;
+}
+
+.main-nav__item a {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline:none;
+  &:hover, &:focus {
+    color: @pink;
+  }
+  &:active {
+    color: fade(@pink, 70%);
+  }
+}
