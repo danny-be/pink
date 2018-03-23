@@ -27,13 +27,13 @@
           </li>
         </ul>
       </nav>
-    </header>
-    <main class="page-main">
       <section class="page-intro">
         <h1 class="page-intro__tittle">Фотографии пользователей</h1>
       </section>
+    </header>
+    <main class="page-main">
       <section class="post-list">
-        <p class="post-list__slogan">Взгляните на фотографии, который выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <p class="post-list__slogan">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <article class="post-list__wrap pist-list__wrap--panorama">
           <h2 class="post-list__tittle">Панорама дня</h2>
           <img class="post-list__panorama" src="http://placehold.it/150x100" alt="Панорама дня">
@@ -42,6 +42,9 @@
             <time class="post-list__time" datetime="2017-09-26T11:00">(5 минут назад)</time>
           </p>
           <p class="post-list__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <button class="post-list__button" type="button">
+            <span class="visually-hidden">Мне нравится</span>
+          </button>
           <span class="post-list__likes"> Нравится: 215</span>
         </article>
         <ul class="post-list__list">
@@ -130,10 +133,10 @@
             </article>
           </li>
         </ul>
+        <p class="post-list__slogan">Затмите их всех! Выкладывайте все, что накопились в телефоне!</p>
       </section>
       <section class="upload">
         <h2 class="visually-hidden">Обработать и отправить фотографию</h2>
-        <p class="upload__slogan">Затмите их всех! Выкладывайте все, что накопились в телефоне!</p>
         <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
           <picture>
           <img class="upload__image" src="http://placehold.it/150x100" alt="Фотография для обработки">
