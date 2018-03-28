@@ -9,45 +9,49 @@
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Приложение «Pink»">
+        <!-- <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Приложение «Pink»"> -->
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item--active">
+              <img class="page-header__logo-image" src="http://placehold.it/75x23" alt="Приложение «Pink»">
+              <button class="main-nav__toggle" type="button">Открыть меню</button>
+            </li>
+            <li class="main-nav__item site-list__item--active">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
       <h1 class="visually-hidden">Приложение «Pink»</h1>
     </header>
+    <section class="page-intro application">
+      <h2 class="visually-hidden">Загрузка приложения</h2>
+      <a class="application__button-download" href="#">Скачать приложение</a>
+      <ul class="application__list">
+        <li class="application__item">
+          <a class="application_link application_link--appstore">Appstore</a>
+        </li>
+        <li class="application__item">
+          <a class="application_link application_link--google-play">Google Play</a>
+        </li>
+        <li class="application__item">
+          <a class="application_link application_link--microsoft-store">Microsoft Store</a>
+        </li>
+      </ul>
+      <p class="application__availability">Доступно для iPhone, iPad, Android. Windows Phone, OS X, Windows 8<p>
+    </section>
     <main class="page-main">
-
-      <section class="page-intro application">
-        <h2 class="visually-hidden">Загрузка приложения</h2>
-        <a class="application__button-download" href="#">Скачать приложение</a>
-        <ul class="application__list">
-          <li class="application__item">
-            <a class="application_link application_link--appstore">Appstore</a>
-          </li>
-          <li class="application__item">
-            <a class="application_link application_link--google-play">Google Play</a>
-          </li>
-          <li class="application__item">
-            <a class="application_link application_link--microsoft-store">Microsoft Store</a>
-          </li>
-        </ul>
-        <p class="application__availability">Доступно для iPhone, iPad, Android. Windows Phone, OS X, Windows 8<p>
-      </section>
       <section class="features">
         <div class="features__wrapper">
           <h2 class="visually-hidden">Характеристики приложения</h2>

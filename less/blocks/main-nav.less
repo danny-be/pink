@@ -1,14 +1,15 @@
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  .list-style-none()
 }
 
-.main-nav__item {
-  list-style: none;
-}
-
-.main-nav__item a {
-  .font-menu();
+.main-nav__link {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: @white;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline:none;
   &:hover, &:focus {
     color: @pink;
   }
@@ -16,3 +17,33 @@
     color: fade(@pink, 70%);
   }
 }
+
+.main-nav__list {
+  text-align:center;
+}
+
+//Setka
+.main-nav__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+//
+// @media (min-width: @tablet-width) {
+//   .main-nav {
+//     width: auto;
+//     margin: 0;
+//   }
+//   .main-nav__wrapper {
+//       width: 660px;
+//       margin: 0 auto;
+//   }
+// }
+//
+// @media (min-width: @desktop-width) {
+//   .main-nav__wrapper {
+//       width: 660px;
+//       margin: 0 auto;
+//   }
+// }
