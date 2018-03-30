@@ -1,5 +1,17 @@
 .price {
   background-color: @gray-background;
+
+
+  display: flex;
+flex-direction: column;
+margin: 0 auto;
+width: 320px;
+}
+
+
+
+.price__wrapper {
+  padding: 0 20px;
 }
 
 .price__tittle {
@@ -39,4 +51,14 @@
 
 .price__header {
   background-color: @blue-dark-background;
+}
+
+.price__toggles {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .price  {
+    width: 660px;
+  }
 }

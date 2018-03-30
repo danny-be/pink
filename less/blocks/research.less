@@ -1,3 +1,37 @@
 .research {
-  background-color: @gray-background;
+  background-color: @white;
+  display: none;
+}
+
+.research__tittle {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+  color: @black;
+  padding: 0;
+  margin: 0;
+}
+
+.research__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: @pink;
+}
+
+.research_text {
+  font-size: 14px;
+  line-height: 24px;
+  color: @blue-dark-font;
+}
+
+.research__wrapper {
+  padding: 0 20px;
+}
+@media (min-width: @tablet-width) {
+  .research {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 660px;
+  }
 }

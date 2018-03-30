@@ -3,21 +3,22 @@
   <head>
     <title>Pink</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link href="css\style.min.css" rel="stylesheet">
 
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <!-- <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Приложение «Pink»"> -->
-      </a>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+      <div class="page-header__wrapper container">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="http://placehold.it/75x22" alt="Приложение «Pink»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
-            <li class="main-nav__item site-list__item--active">
-              <img class="page-header__logo-image" src="http://placehold.it/75x23" alt="Приложение «Pink»">
-              <button class="main-nav__toggle" type="button">Открыть меню</button>
-            </li>
             <li class="main-nav__item site-list__item--active">
               <a class="main-nav__link">Главная</a>
             </li>
@@ -31,35 +32,43 @@
               <a class="main-nav__link" href="#">HTML Academy</a>
             </li>
           </ul>
-        </div>
-      </nav>
-      <h1 class="visually-hidden">Приложение «Pink»</h1>
+        </nav>
+      </div>
     </header>
-    <section class="page-intro application">
-      <h2 class="visually-hidden">Загрузка приложения</h2>
-      <a class="application__button-download" href="#">Скачать приложение</a>
-      <ul class="application__list">
-        <li class="application__item">
-          <a class="application_link application_link--appstore">Appstore</a>
-        </li>
-        <li class="application__item">
-          <a class="application_link application_link--google-play">Google Play</a>
-        </li>
-        <li class="application__item">
-          <a class="application_link application_link--microsoft-store">Microsoft Store</a>
-        </li>
-      </ul>
-      <p class="application__availability">Доступно для iPhone, iPad, Android. Windows Phone, OS X, Windows 8<p>
-    </section>
+
     <main class="page-main">
-      <section class="features">
-        <div class="features__wrapper">
-          <h2 class="visually-hidden">Характеристики приложения</h2>
-          <div class="features__slogan-wrap">
-            <p class="features__slogan">Устали от серости мегаполиса?</p>
-            <p class="features__slogan">Нам есть, что вам предложить!</p>
+      <h1 class="visually-hidden">Приложение «Pink»</h1>
+      <section class="application page-intro">
+        <div class="container">
+          <div class="application__wrapper">
+            <p class="application__slogan">Взгляните<br> на жизнь<br> иначе!</p>
+            <h2 class="visually-hidden">Загрузка приложения</h2>
+            <a class="application__button-download" href="#">Скачать приложение</a>
+            <ul class="application__list">
+              <li class="application__item">
+                <a class="application_link application_link--appstore">Appstore</a>
+              </li>
+              <li class="application__item">
+                <a class="application_link application_link--google-play">Google Play</a>
+              </li>
+              <li class="application__item">
+                <a class="application_link application_link--microsoft-store">Microsoft Store</a>
+              </li>
+            </ul>
+            <p class="application__availability">Доступно для iPhone, iPad, Android. Windows Phone, OS X, Windows 8</p>
           </div>
         </div>
+      </section>
+
+      <section class="features">
+
+        <div class="features__wrapper-slogan">
+          <h2 class="visually-hidden">Характеристики приложения</h2>
+            <p class="features__slogan">Устали от серости мегаполиса?</p>
+            <p class="features__slogan features__slogan--tablet">Нам есть, что вам предложить!</p>
+        </div>
+        <div class="features__wrapper">
+        <div class="features__wrapper-list">
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__tittle">Поднимает настроение</h3>
@@ -74,15 +83,20 @@
             <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+      </div>
+      </div>
       </section>
       <!-- <section class="research">
-        <h2 class="research__tittle">Эффект на 24 часа!</h2>
+        <div class="research__wrapper">
+        <h2 class="visually-hidden">Проведенные исследования</h2>
+        <h3 class="research__tittle">Эффект на 24 часа!</h3>
         <p class="research_text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
         <a class="research__link" href="#">Узнать больше об исследовании</a>
       </section> -->
-      <section class="reviews">
-        <div class="reviews__wrapper slider">
+
+      <!-- <section class="reviews">
           <h2 class="visually-hidden">Отзывы о нас</h2>
+          <div class="reviews__wrapper">
           <div class="reviews__list  slider__list">
              <blockquote class="reviews__item  slider__item">
                <cite class="reviews__author">Николай Петров</cite>
@@ -103,6 +117,7 @@
              <button class="slider__toggle" type="button">3</button>
            </p>
          </div>
+        </div>
       </section>
       <section class="price">
         <div class="price__wrapper slider">
@@ -169,14 +184,17 @@
               </ul>
             </section>
           </div>
-          <p class="price__toggles slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle slider__toggle--active" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
-          </p>
+
         </div>
+        <p class="price__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle slider__toggle--active" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+
       </section>
       <section class="contacts">
+        <div class="contacts__wrapper">
         <h2 class="visually-hidden">Контакты</h2>
         <p class="contacts__slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
         <ul class="contacts__list">
@@ -193,13 +211,15 @@
             <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
           </li>
         </ul>
+      </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Местрорасположение офиса</h2>
         <img class="map__image" src="http://placehold.it/150x100" alt="Месторасположение нашего офиса">
       </section>
     </main>
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="http://placehold.it/150x100" alt="Приложение «Pink»">
@@ -221,6 +241,7 @@
         <b class="copyright__text">Разработано</b>
         <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
+    </div>
     </footer> -->
   </body>
 </html>
